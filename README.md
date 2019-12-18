@@ -29,7 +29,11 @@ Things you may want to cover:
 |------|----|-------|
 |email|string|null: false|
 |password|string|null: false|
+<<<<<<< HEAD
 |name|string|null: false|
+=======
+|name|string|index: true|
+>>>>>>> parent of cd5709b... Update README.md
 ### Association
   has_many :groups_users
 - has_many :grups, through:  :groups_users
