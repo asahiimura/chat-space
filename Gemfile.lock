@@ -151,8 +151,11 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
 <<<<<<< HEAD
+<<<<<<< HEAD
     thor (1.0.1)
 =======
+=======
+>>>>>>> parent of 291260d... Revert "haml"
     temple (0.8.2)
     thor (1.0.0)
 >>>>>>> parent of 291260d... Revert "haml"
