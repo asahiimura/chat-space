@@ -1,0 +1,39 @@
+.main
+  .main__header
+    .main__header__groupname
+      %p.main__header__groupname__name test
+      .main__header__groupname__member member:masa
+    =link_to "#", class: "main__header__tag" do
+      .main__header__tag__btn Edit
+    %span<>
+      
+  .main__messages
+    .main__messages__message
+      .main__messages__message__info
+        .main__messages__message__info__name masa
+        .main__messages__message__info__tim 2019/12/12 00:00:00
+      .main__messages__message__text ghsglkjslkfgjsdlkfgjsdlk
+    .main__messages__message
+      .main__messages__message__info
+        .main__messages__message__info__name masa
+        .main__messages__message__info__tim 2019/12/12 00:00:00
+      .main__messages__message__text ghsglkjslkfgjsdlkfgjsdlk
+    .main__messages__message
+      .main__messages__message__info
+        .main__messages__message__info__name masa
+        .main__messages__message__info__tim 2019/12/12 00:00:00
+      .main__messages__message__text ghsglkjslkfgjsdlkfgjsdlk
+    
+    
+   
+  .main__messageform
+    .main__messageform__new
+      .main__messageform__new__input
+        %input.main__messageform__new__input__text{placeholder:  "type a message", type: "text"}/
+        %label.main__messageform__new__input__image{for: "message_image"}
+          %i.fa.fa-image
+          %input#message_image.main__messageform__new__input__image__file{type: "file"}/
+
+
+          
+      %input.main__messageform__new__btn{type: "submit", value: "Send"}/

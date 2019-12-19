@@ -1,0 +1,194 @@
+$sidcolor: #ffffff;
+$sidbackground-color: #253141;
+$btncolor:#38aef0;
+  
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.side {
+  
+  width: 300px;
+  float: left;
+  color:$sidcolor;
+  font-weight: bold;
+
+   &__header {
+    height: 100px;
+    background-color:$sidbackground-color;
+    padding: 0 20px ;
+    align-items: center;
+    display: flex;
+
+    &__box {
+      height: 20px;
+      width: 100%;display: flex;
+      justify-content: space-between;
+       &__user-name {
+          font-size: 16px;
+       }
+       .icn {
+         width: 60px;
+         display: flex;
+         justify-content: flex-end;
+         
+         &__list-1 {
+           margin-right: 5px;
+           a {
+             color: $sidcolor;
+           }
+
+         }
+         &__list-2 {
+          a {
+            color: $sidcolor;
+          }
+
+         }
+       }
+       
+    }
+   }
+   &__groups {
+    background-color:$sidbackground-color;
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+    a {
+      color:$sidcolor ;
+    }
+     &__group {
+       &__name {
+         padding-top: 20px;
+         padding-bottom: 5px;
+         font-size: 15px;
+        }
+        &__message {
+          font-size: 11px;
+          padding-bottom: 40px;
+
+        }
+       
+     }
+  }
+}
+
+.main {
+  background-color: #ffffff;
+  width: calc(100vw - 300px);
+  float: left;
+  &__header {
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    &__groupname {
+      margin-top:35px;
+      &__name {
+        font-size: 20px;
+        color: #333333;
+        margin-bottom: 15px;
+      }
+      &__member {
+        font-size: 12px;
+        color: #999999;
+      }
+    }
+
+     &__tag{
+      height: 0px;
+      color: $btncolor;
+      font-size: 16px;
+      &__btn {
+        height: 40px;
+        border: solid 1px $btncolor;
+        line-height: 40px;
+        margin-top:29px;
+        padding: 0 20px;
+        position: absolute;
+        right: 40px;
+        
+      }
+    }
+    
+  }
+  &__messages {
+    height: calc(100vh - 190px);
+    background-color: #fafafa;
+    padding: 35px 40px 0;
+    &__message {
+      width: 100%;
+      margin-bottom: 46px;
+      &__info {
+        display: flex;
+        justify-content: flex-start;
+        &__name {
+          color: #333333;
+          font-size: 16px;
+        }
+        &__tim {
+          color: #999999;
+          font-size: 12px;
+          margin-left: 10px;
+        }
+      }
+      &__text {
+        color: #434A54;
+        font-size: 14px;
+      }
+       
+
+    }
+  }
+  &__messageform {
+    height: 90px;
+    background-color: #ddd;
+    padding: 20px 40px;
+    &__new {
+      display: flex;
+      justify-content: space-between;
+      &__input {
+        width: 100%;
+        position: relative;
+        
+        &__text {
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          color: #434a54;
+          border-style: none;
+
+
+        }
+        &__image {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          
+          .fa {
+            display: inline-block;
+            
+           }
+           &__file {
+            display: none;
+           }
+        
+         }
+      }
+      &__btn {
+        width: 100px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: $btncolor;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+}
