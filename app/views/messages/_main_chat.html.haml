@@ -3,8 +3,9 @@
     .main__header__groupname
       %p.main__header__groupname__name test
       .main__header__groupname__member member:masa
-    %a{:class => "main__header__tag", :href => "＃"}
+    =link_to "#", class: "main__header__tag" do
       .main__header__tag__btn Edit
+    %span<>
       
   .main__messages
     .main__messages__message
