@@ -13,7 +13,7 @@
 
       
   .main__messages
-    = render @messages
+    = render @messages.order("created_at DESC")
     
    
   -# .main__messageform
