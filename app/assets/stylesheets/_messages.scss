@@ -56,10 +56,12 @@ $btncolor:#38aef0;
     background-color:$sidbackground-color;
     height: calc(100vh - 100px);
     padding: 0 20px;
+    overflow: scroll;
     a {
       color:$sidcolor ;
     }
      &__group {
+      
        &__name {
          padding-top: 20px;
          padding-bottom: 5px;
@@ -118,6 +120,7 @@ $btncolor:#38aef0;
     height: calc(100vh - 190px);
     background-color: #fafafa;
     padding: 35px 40px 0;
+    overflow: scroll;
     &__message {
       width: 100%;
       margin-bottom: 46px;
