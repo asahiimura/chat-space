@@ -14,14 +14,6 @@
       
   .main__messages
     = render @messages
-  -# .main__messageform
-  -#   .main__messageform__new
-  -#     .main__messageform__new__input
-  -#       %input.main__messageform__new__input__text{placeholder:  "type a message", type: "text"}/
-  -#       %label.main__messageform__new__input__image{for: "message_image"}
-  -#         %i.fa.fa-image
-  -#         %input#message_image.main__messageform__new__input__image__file{type: "file"}/
-  -#     %input.main__messageform__new__btn{type: "submit", value: "Send"}/
 
   .form
     = form_for [@group, @message] do |f|
@@ -33,11 +25,3 @@
       = f.submit 'Send', class: 'form__submit'
 
 
--#  .form
--#       = form_for [@group, @message] do |f|
--#         = f.text_field :content, class: 'form__message', placeholder: 'type a message'
--#         .form__mask
--#           = f.label :image, class: 'form__mask__image' do
--#             = icon('fas', 'image', class: 'icon')
--#             = f.file_field :image, class: 'hidden'
--#         = f.submit 'Send', class: 'form__submit'
